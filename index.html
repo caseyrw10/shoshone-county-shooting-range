@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Shoshone County Shooting Range | Safety First Outdoors</title>
+    <title>Shoshone County Public Shooting Range | Safety First Outdoors</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700;800&family=Inter:wght@400;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -115,7 +115,7 @@
     <nav class="fixed top-0 z-50 w-full border-b border-slate-stone/20 bg-background h-20">
         <div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-full">
             <div class="flex items-center gap-4">
-                <span class="font-headline-md text-headline-md font-bold text-forest-deep">Shoshone County Shooting Range</span>
+                <span class="font-headline-md text-headline-md font-bold text-forest-deep">Shoshone County Public Shooting Range</span>
                 <div id="range-status-indicator" class="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full border">
                     <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">circle</span>
                     <span id="range-status-text" class="font-label-caps text-label-caps uppercase">Checking status...</span>
@@ -133,8 +133,8 @@
                 <a class="hidden lg:block" href="https://www.facebook.com/scpsrange" target="_blank">
                     <span class="material-symbols-outlined text-forest-deep hover:text-range-safety-orange transition-colors">rss_feed</span>
                 </a>
-                <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="bg-range-safety-orange text-white px-6 py-2 rounded-lg font-bold hover:scale-105 transition-transform">
-                    Donate
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="bg-range-safety-orange text-white px-5 py-2 rounded-lg font-bold hover:scale-105 transition-transform">
+                    Recommended User Fee
                 </button>
                 <button id="mobile-menu-btn" class="md:hidden flex items-center">
                     <span class="material-symbols-outlined text-forest-deep">menu</span>
@@ -194,16 +194,16 @@
                         <span class="material-symbols-outlined text-range-safety-orange text-4xl">account_balance</span>
                         <div>
                             <h3 class="font-headline-md text-headline-md text-forest-deep">A 100% Non-Profit Venture</h3>
-                            <p class="font-body-md text-body-md mt-2 text-on-surface-variant">We are a free non-profit range funded entirely by user generosity. We receive zero county funding, relying on brass donations, grants, and your site contributions.</p>
+                            <p class="font-body-md text-body-md mt-2 text-on-surface-variant">We are a non-profit range funded entirely by user fees and user generosity. We receive zero county funding, relying on user fees, brass/cash donations and volunteers.</p>
                         </div>
                     </div>
                     <div class="bg-primary-container p-6 rounded-lg text-white border-l-4 border-range-safety-orange">
                         <p class="font-bold flex items-center gap-2">
                             <span class="material-symbols-outlined">payments</span>
-                            Recommended $5.00 donation per shooter
+                            Recommended user fee: $5.00 per shooter
                         </p>
                     </div>
-                    <p class="font-body-md text-body-md text-on-surface-variant">We now offer professional-grade eye and ear protection for a small donation of $2.00 on-site. Your support keeps the range open, clean, and safe for everyone.</p>
+                    <p class="font-body-md text-body-md text-on-surface-variant">We now offer professional-grade eye and ear protection for a small recommended user fee of $2.00 on-site. Your support keeps the range open, clean, and safe for everyone.</p>
                 </div>
             </div>
         </div>
@@ -245,7 +245,7 @@
                         <span class="material-symbols-outlined text-4xl">ads_click</span>
                     </div>
                     <h4 class="font-label-caps text-label-caps text-forest-deep mb-2">RULE 03</h4>
-                    <p class="font-headline-md text-headline-md text-forest-deep leading-tight">Finger off the trigger until ready</p>
+                    <p class="font-headline-md text-headline-md text-forest-deep leading-tight">Finger off the trigger until on target and ready to shoot.</p>
                 </div>
                 <div class="bg-white p-8 border border-slate-stone/10 safety-card hover:shadow-lg transition-all group">
                     <div class="text-range-safety-orange mb-4">
@@ -276,8 +276,8 @@
                 </div>
                 <div class="bg-secondary p-10 rounded-xl text-white flex flex-col justify-center items-center text-center">
                     <span class="material-symbols-outlined text-6xl mb-4">do_not_disturb_on</span>
-                    <h3 class="font-headline-md text-headline-md mb-2 leading-tight">NO AR FIREARMS</h3>
-                    <p class="text-sm opacity-90">Strictly prohibited on the pistol range regardless of caliber.</p>
+                    <h3 class="font-headline-md text-headline-md mb-2 leading-tight uppercase">NO AR, AK, CARBINES, OR RIFLES</h3>
+                    <p class="text-sm opacity-90 font-medium">On pistol range regardless of caliber.</p>
                 </div>
             </div>
         </div>
@@ -286,11 +286,18 @@
     <!-- Events & Calendar -->
     <section class="py-section-gap bg-background" id="events">
         <div class="max-w-container-max mx-auto px-gutter">
-            <div class="flex justify-between items-center mb-12">
+            <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 mb-12">
                 <div>
-                    <h2 class="font-headline-lg text-headline-lg text-forest-deep">Upcoming Range Events</h2>
+                    <div class="flex flex-wrap items-center gap-3">
+                        <h2 class="font-headline-lg text-headline-lg text-forest-deep">Upcoming Range Events</h2>
+                        <span id="events-month-label" class="bg-range-safety-orange/10 text-range-safety-orange border border-range-safety-orange/20 px-3 py-1 rounded-full font-label-caps text-xs uppercase"></span>
+                    </div>
                     <p class="text-on-surface-variant mt-2">Sign up for educational programs, project marksmanship events, and tournaments.</p>
                 </div>
+                <a id="full-calendar-link" href="#" target="_blank" rel="noopener noreferrer" class="hidden inline-flex items-center justify-center gap-2 border-2 border-forest-deep/20 text-forest-deep px-5 py-2.5 rounded-lg font-bold text-sm hover:border-range-safety-orange hover:text-range-safety-orange transition-colors shrink-0">
+                    <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+                    <span>View Full Calendar</span>
+                </a>
             </div>
             <!-- Dynamic Events List -->
             <div id="events-list" class="space-y-4">
@@ -413,7 +420,7 @@
                 <div class="space-y-12">
                     <div>
                         <h2 class="font-headline-lg text-headline-lg text-forest-deep mb-4">Get in Touch</h2>
-                        <p class="text-on-surface-variant">Questions about lane availability, brass donations, or upcoming events? Our board of directors is here to help.</p>
+                        <p class="text-on-surface-variant">Questions about lane availability, recommended user fees, or upcoming events? Our board of directors is here to help.</p>
                     </div>
                     <div class="grid sm:grid-cols-2 gap-8">
                         <div>
@@ -423,14 +430,22 @@
                                     <span class="material-symbols-outlined text-range-safety-orange">person</span>
                                     <div>
                                         <p class="font-bold text-forest-deep">Joe Allen</p>
-                                        <p class="text-sm text-on-surface-variant">President • 208-512-1417</p>
+                                        <p class="text-sm text-on-surface-variant">President • <a href="tel:208-512-1417" class="hover:text-range-safety-orange transition-colors">208-512-1417</a></p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-range-safety-orange">person</span>
+                                    <div>
+                                        <p class="font-bold text-forest-deep">Larry Schiel</p>
+                                        <p class="text-sm text-on-surface-variant">Vice President • <a href="tel:415-314-7490" class="hover:text-range-safety-orange transition-colors">415-314-7490</a></p>
+                                        <p class="text-sm text-on-surface-variant">Email: <a href="mailto:lschiel@nsred.us" class="text-range-safety-orange hover:underline">lschiel@nsred.us</a></p>
                                     </div>
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <span class="material-symbols-outlined text-range-safety-orange">person</span>
                                     <div>
                                         <p class="font-bold text-forest-deep">Lora Line</p>
-                                        <p class="text-sm text-on-surface-variant">Sec. Treasurer • 208-816-9779</p>
+                                        <p class="text-sm text-on-surface-variant">Sec. Treasurer • <a href="tel:208-816-9779" class="hover:text-range-safety-orange transition-colors">208-816-9779</a></p>
                                     </div>
                                 </li>
                             </ul>
@@ -443,13 +458,17 @@
                                     <p>1700 Government Gulch</p>
                                     <p>PO Box 272</p>
                                     <p>Smelterville, ID 83868</p>
+                                    <a href="https://www.google.com/maps/dir/?api=1&destination=47.526207,-116.175637" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-xs font-bold text-range-safety-orange hover:underline mt-2">
+                                        <span>Get Directions</span>
+                                        <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Active Google Map Iframe Integration -->
                     <div class="h-64 w-full rounded-xl overflow-hidden border border-slate-stone/10 shadow-inner">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2693.411649163274!2d-116.27301072346765!3d47.53935297118314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53612d31b73e5bfb%3A0xe54e3d7a8e52e505!2s1700%20Government%20Gulch%20Rd%2C%20Smelterville%2C%20ID%2083868!5e0!3m2!1sen!2sus!4v1721234567890!5m2!1sen!2sus" 
+                        <iframe src="https://maps.google.com/maps?q=47.526207,-116.175637+(Shoshone+County+Public+Shooting+Range)&amp;hl=en&amp;z=14&amp;output=embed" 
                                 class="w-full h-full border-0" 
                                 allowfullscreen="" 
                                 loading="lazy" 
@@ -529,7 +548,8 @@
         </div>
     </footer>
 
-    <!-- App Script -->
+    <!-- Google Calendar Config & App Script -->
+    <script src="js/calendar-config.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

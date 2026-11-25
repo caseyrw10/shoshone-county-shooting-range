@@ -1,0 +1,36 @@
+name: Sync Google Calendar Events
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Fetch latest Google Calendar events
+        run: node scripts/sync-calendar.mjs
+
+      - name: Commit updated events if changed
+        run: |
+          if [ -n "$(git status --porcelain data/events.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/events.json
+            git commit -m "Update calendar events from Google Calendar"
+            git push
+          else
+            echo "No calendar changes detected."
+          fi

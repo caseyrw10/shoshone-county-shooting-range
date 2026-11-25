@@ -1,0 +1,80 @@
+{
+  "configured": true,
+  "source": "google-calendar-ics",
+  "calendarId": "scpsrange@gmail.com",
+  "timeZone": "America/Los_Angeles",
+  "monthLabel": "November 2026",
+  "events": [
+    {
+      "id": "4kflrof2aum0c5eqei1devqg9s@google.com-2026-11-04T18:00",
+      "summary": "Monthly General Meeting",
+      "description": "",
+      "location": "Clubhouse on site",
+      "status": "confirmed",
+      "htmlLink": "https://calendar.google.com/calendar/embed?src=scpsrange%40gmail.com&ctz=America%2FLos_Angeles",
+      "start": {
+        "dateTime": "2026-11-05T02:00:00.000Z"
+      },
+      "end": {
+        "dateTime": "2026-11-05T03:00:00.000Z"
+      }
+    },
+    {
+      "id": "0569n4td15btvutdtol3nm7guf@google.com",
+      "summary": "Test Event for Webpage",
+      "description": "",
+      "location": "",
+      "status": "confirmed",
+      "htmlLink": "https://calendar.google.com/calendar/embed?src=scpsrange%40gmail.com&ctz=America%2FLos_Angeles",
+      "start": {
+        "dateTime": "2026-11-26T02:00:00.000Z"
+      },
+      "end": {
+        "dateTime": "2026-11-26T03:00:00.000Z"
+      }
+    },
+    {
+      "id": "4kflrof2aum0c5eqei1devqg9s@google.com-2026-12-02T18:00",
+      "summary": "Monthly General Meeting",
+      "description": "",
+      "location": "Clubhouse on site",
+      "status": "confirmed",
+      "htmlLink": "https://calendar.google.com/calendar/embed?src=scpsrange%40gmail.com&ctz=America%2FLos_Angeles",
+      "start": {
+        "dateTime": "2026-12-03T02:00:00.000Z"
+      },
+      "end": {
+        "dateTime": "2026-12-03T03:00:00.000Z"
+      }
+    },
+    {
+      "id": "4kflrof2aum0c5eqei1devqg9s@google.com-2027-01-06T18:00",
+      "summary": "Monthly General Meeting",
+      "description": "",
+      "location": "Clubhouse on site",
+      "status": "confirmed",
+      "htmlLink": "https://calendar.google.com/calendar/embed?src=scpsrange%40gmail.com&ctz=America%2FLos_Angeles",
+      "start": {
+        "dateTime": "2027-01-07T02:00:00.000Z"
+      },
+      "end": {
+        "dateTime": "2027-01-07T03:00:00.000Z"
+      }
+    },
+    {
+      "id": "4kflrof2aum0c5eqei1devqg9s@google.com-2027-02-03T18:00",
+      "summary": "Monthly General Meeting",
+      "description": "",
+      "location": "Clubhouse on site",
+      "status": "confirmed",
+      "htmlLink": "https://calendar.google.com/calendar/embed?src=scpsrange%40gmail.com&ctz=America%2FLos_Angeles",
+      "start": {
+        "dateTime": "2027-02-04T02:00:00.000Z"
+      },
+      "end": {
+        "dateTime": "2027-02-04T03:00:00.000Z"
+      }
+    }
+  ],
+  "syncedAt": "2026-11-25T02:03:48.160Z"
+}
