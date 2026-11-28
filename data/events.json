@@ -48,6 +48,20 @@
       }
     },
     {
+      "id": "m33kfpj759pkq9q208olukeuk4@google.com",
+      "summary": "Osburn Gun Show",
+      "description": "",
+      "location": "",
+      "status": "confirmed",
+      "htmlLink": "https://calendar.google.com/calendar/embed?src=scpsrange%40gmail.com&ctz=America%2FLos_Angeles",
+      "start": {
+        "dateTime": "2026-12-12T18:00:00.000Z"
+      },
+      "end": {
+        "dateTime": "2026-12-13T03:00:00.000Z"
+      }
+    },
+    {
       "id": "4kflrof2aum0c5eqei1devqg9s@google.com-2027-01-06T18:00",
       "summary": "Monthly General Meeting",
       "description": "",
@@ -76,5 +90,5 @@
       }
     }
   ],
-  "syncedAt": "2026-11-27T23:43:00.416Z"
+  "syncedAt": "2026-11-28T07:29:04.842Z"
 }
